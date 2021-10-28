@@ -52,7 +52,6 @@ h2{
 }
 h3{
     font-size:1.5rem;
-    font-family: 'PT Serif', serif;
 }
 a{
     text-decoration: none;
@@ -75,6 +74,48 @@ nav{
     justify-content:space-between
 
 }
-section.bg-img{
-    display:flex
+.intro{
+    color:white;
+    height:80vh;
+    background-image: url(../images/mymind-KnUX9qtR_4E-unsplash.jpg);
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* project section styles */
+.container{
+    color:white;
+    height:90vh;
+    display:flex;
+    flex-wrap: wrap;
+
+
+}
+
+.project-one{
+    background-image: url(../images/project1.jpg);
+    width:33.33%;
+}
+.project-two{
+    background-image: url(../images/project2.jpg);
+    width:33.333%;
+}
+.project-three{
+    background-image: url(../images/project3.jpg);
+    width:33.333%;
+}
+.project-four{
+    background-image: url(../images/project4.jpg);
+    width:33.333%;
+}
+.project-five{
+    background-image: url(../images/project5.jpg);
+    width:33.333%;
+   
+}
+.project-six{
+    background-image: url(../images/project6.jpg);
+    width:33.333%;
 }
