@@ -58,12 +58,16 @@ a{
     color:black;
 }
 button {
-    padding:.4% 3%;
+    padding:.2% 3%;
     border:none;
     border-radius:5px;
     background-color:#ffdd99;
-    color:white;
+    color:hsl(352, 88%, 55%);
     font-size:1.5rem;
+}
+button:hover{
+    background-color:white;
+    color:hsl(352, 88%, 55%);
 }
 /* helper classes */
 .bg-img{
@@ -116,24 +120,24 @@ header a:hover{
     justify-content: center;
 }
 .button button{
-    padding:1% 2%;
+    padding:2% 3%;
+    display:flex;
+    
 }
-.button button:hover{
-    background-color:white;
-    color:hsl(352, 88%, 55%);
-}
+
 /* list sections styles */
 .list{
     margin: 10% 0;
-    width:65%;
+    width:70%;
     text-align: center;
 }
 div.headshot{
-    width:35%;
-    padding: 4.5%;
+    width:30%;
+    padding: 4% 11% 4% 0%;
 }
 
 .list li {
+    padding:2%;
     list-style-type: square;
     list-style-position: inside;
     color:hsl(352, 88%, 55%);
@@ -144,11 +148,11 @@ div.headshot{
 .list-container{
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 ul{
     display:flex;
-    margin-top:6%;
+    margin: 6%;
     /* flex-direction: column; */
 }
 
@@ -156,6 +160,7 @@ ul{
 .container{
     text-align: center;
     padding:0;
+    margin-bottom: 20%;
     color:white;
     height:90vh;
     display:flex;
