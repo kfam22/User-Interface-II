@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 
 /*General Styles*/
@@ -58,9 +58,10 @@ a{
     color:black;
 }
 button {
-    padding:.4% 1.5%;
+    padding:.4% 3%;
+    border:none;
     border-radius:5px;
-    background-color: coral;
+    background-color:#ffdd99;
     color:white;
     font-size:1.5rem;
 }
@@ -70,17 +71,32 @@ button {
     background-size:cover;
     background-position:center;
 }
+
 /* header section styles! */
 nav p{
     font-weight: bold;
+    text-transform: uppercase;
+    color:hsl(352, 88%, 55%);
+}
+nav a{
+    color:hsl(352, 88%, 55%);
 }
 nav{
+    padding:1%;
     font-weight:lighter;
-    text-transform: uppercase;
     display:flex;
     justify-content:space-between
-
 }
+div.links{
+    font-size: 1.5rem;
+    width:25%;
+    display:flex;
+    justify-content: space-between;
+}
+header a:hover{
+    font-weight:bold;
+}
+
 .intro{
     color:white;
     height:80vh;
@@ -89,18 +105,68 @@ nav{
     justify-content: center;
     align-content: center;
 }
+.intro-text{
+    padding:15%;
+}
+.intro-text p{
+    margin-bottom: 5%;
+}
+.button{
+    display:flex;
+    justify-content: center;
+}
+.button button{
+    padding:1% 2%;
+}
+.button button:hover{
+    background-color:white;
+    color:hsl(352, 88%, 55%);
+}
+/* list sections styles */
+.list{
+    margin: 10% 0;
+    width:65%;
+    text-align: center;
+}
+div.headshot{
+    width:35%;
+    padding: 4.5%;
+}
 
+.list li {
+    list-style-type: square;
+    list-style-position: inside;
+    color:hsl(352, 88%, 55%);
+}
+.headshot img{
+    border-radius:50%;
+}
+.list-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+ul{
+    display:flex;
+    margin-top:6%;
+    /* flex-direction: column; */
+}
 
 /* project section styles */
 .container{
-    padding:5% 0;
+    text-align: center;
+    padding:0;
     color:white;
     height:90vh;
     display:flex;
     flex-wrap: wrap;
-
-
 }
+/* .container h2{
+    opacity:0%;
+}
+.container h2:hover{
+    opacity:100%;
+} */
 
 .project-one{
     background-image: url(../images/project1.jpg);
@@ -119,19 +185,29 @@ nav{
     width:33.333%;
 }
 .project-five{
-    background-image: url(../images/project5.jpg);
+    background-image: url(../images/project6.jpg);
     width:33.333%;
    
 }
 .project-six{
-    background-image: url(../images/project6.jpg);
+    background-image: url(../images/project5.jpg);
     width:33.333%;
 }
 
 /* footer styles */
 footer{
+    padding: 2% 0;
     text-align:center;
+    background-color:#e66022da;
+    color:white;
     display:flex;
     flex-direction:column;
     align-content: center;
+}
+.footer-text{
+    font-size: 3rem;
+}
+.footer-text h3{
+    margin: .3%;
+    font-size:2rem;
 }
