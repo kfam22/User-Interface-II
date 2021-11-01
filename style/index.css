@@ -55,7 +55,7 @@ h3{
 }
 a{
     text-decoration: none;
-    color:black;
+    color:hsl(352, 88%, 55%);
 }
 button {
     padding:.2% 3%;
@@ -83,17 +83,21 @@ nav p{
     color:hsl(352, 88%, 55%);
 }
 nav a{
-    color:hsl(352, 88%, 55%);
+    padding: 2%;
 }
+/* .nav-name{
+    width:25%;
+} */
 nav{
+    width:100%;
     padding:1%;
     font-weight:lighter;
     display:flex;
     justify-content:space-between
 }
 div.links{
-    font-size: 1.5rem;
     width:25%;
+    font-size: 1.5rem;
     display:flex;
     justify-content: space-between;
 }
@@ -110,7 +114,7 @@ header a:hover{
     align-content: center;
 }
 .intro-text{
-    padding:15%;
+    padding:20%;
 }
 .intro-text p{
     margin-bottom: 5%;
@@ -121,8 +125,6 @@ header a:hover{
 }
 .button button{
     padding:2% 3%;
-    display:flex;
-    
 }
 
 /* list sections styles */
@@ -138,7 +140,7 @@ div.headshot{
 
 .list li {
     padding:2%;
-    list-style-type: square;
+    list-style-type:disc;
     list-style-position: inside;
     color:hsl(352, 88%, 55%);
 }
@@ -153,7 +155,6 @@ div.headshot{
 ul{
     display:flex;
     margin: 6%;
-    /* flex-direction: column; */
 }
 
 /* project section styles */
@@ -221,10 +222,74 @@ footer{
 
 /* tablet */
 @media (max-width:800px){
-
+    nav{
+        justify-content: space-around;
+    }
+    ul{
+        flex-direction: column;
+    }
+    .headshot img{
+        margin-top: 60%;
+    }
+    .project-one{
+        background-image: url(../images/project1.jpg);
+        width:50%;
+    }
+    .project-two{
+        background-image: url(../images/project2.jpg);
+        width:50%;
+    }
+    .project-three{
+        background-image: url(../images/project3.jpg);
+        width:50%;
+    }
+    .project-four{
+        background-image: url(../images/project4.jpg);
+        width:50%;
+    }
+    .project-five{
+        background-image: url(../images/project6.jpg);
+        width:50%;
+       
+    }
+    .project-six{
+        background-image: url(../images/project5.jpg);
+        width:50%;
+    }
 }
 
 /* mobile */
 @media (max-width:500px){
-    
+    h1{
+        font-size: 3rem;
+    }
+   nav{
+       flex-direction: column;
+       text-align: center;
+       font-size: 2rem;
+   }
+   div.links{
+       flex-direction: column;
+       width:100%;
+       font-size: 1.6rem;
+   }
+   nav p{
+       width:100%;
+   }
+   .intro{
+       height:60vh;
+       text-align: center;
+   }
+   div.list{
+       width:60%;
+   }
+   div.headshot{
+       width:40%;
+   }
+   .button button{
+    font-size: 1.8rem;
+}
+.container{
+    margin-bottom: 0;
+}
 }
