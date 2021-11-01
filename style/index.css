@@ -216,3 +216,15 @@ footer{
     margin: .3%;
     font-size:2rem;
 }
+
+/* media queries for tablet and mobile */
+
+/* tablet */
+@media (max-width:800px){
+
+}
+
+/* mobile */
+@media (max-width:500px){
+    
+}
