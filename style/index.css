@@ -83,11 +83,9 @@ nav p{
     color:hsl(352, 88%, 55%);
 }
 nav a{
-    padding: 2%;
+    padding: 1rem;
+
 }
-/* .nav-name{
-    width:25%;
-} */
 nav{
     width:100%;
     padding:1%;
@@ -96,7 +94,6 @@ nav{
     justify-content:space-between
 }
 div.links{
-    width:25%;
     font-size: 1.5rem;
     display:flex;
     justify-content: space-between;
@@ -222,9 +219,6 @@ footer{
 
 /* tablet */
 @media (max-width:800px){
-    nav{
-        justify-content: space-around;
-    }
     ul{
         flex-direction: column;
     }
